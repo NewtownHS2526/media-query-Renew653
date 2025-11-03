@@ -31,24 +31,39 @@ body {
   }
   
   /* Insert @Media queries here! */
-  @media (max-width: 786px) {
- .main {
+  @media (min-width: 786px) {
+    .main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
         gap: 10px;
- }
+    }
+    .meal-card{
+        width: 50%;
+        opacity: 1;
+        box-shadow: 1px 1px 15px purple;
+    }
+    .meal-card:hover {
+        opacity: 0.5;
+    }
   }
-  @media (max-width: 992px) {
+  @media (min-width: 992px) {
  .main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 30px;
         padding: 20px;
- }
+ }  
+    .meal-card {
+        width: 75%;
+        opacity: 1;
+        box-shadow: 1px 1px 15px green;
+    }
+    .meal-card:hover {
+        opacity: 0.75;
+    }
   }
- @media (max-width: 1200px) {
+ @media (min-width: 1200px) {
 .main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
